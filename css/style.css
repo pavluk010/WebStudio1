@@ -666,6 +666,10 @@ margin-top: 50px;
     margin-top: 20px;
 }
 
+.adventages-list:hover{
+    color: var(--header-color);
+}
+
 .footer-item{
     margin-bottom: 9px;
 }
