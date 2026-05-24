@@ -670,6 +670,11 @@ margin-top: 50px;
     color: var(--header-color);
 }
 
+.adventages-list:hover{
+    color: var(--header-color);
+}
+
+
 .footer-item{
     margin-bottom: 9px;
 }
