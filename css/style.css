@@ -170,15 +170,19 @@
     font-weight: 500;
     line-height: 1.14;
     letter-spacing: 0.28px;
+    position: relative;
+    padding-bottom: 11px;
     }
 
 .header-detales::after{
     content: "";
-    display: block;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+
     width: 100%;
-    height: 2px;
+    height: 4px;
     background-color: var(--header-color);
-    transition: width 0.3s ease-in-out;
 }
 
 
@@ -186,14 +190,80 @@
     color: var(--header-color);
 }
 
-.header-detale:after{
-    content: "";
-    display: block;
-    width: 100%;
-    height: 2px;
-    background-color: var(--header-color);
-    transition: width 0.3s ease-in-out;
+.header-detale{
+    position: relative;
+    padding-bottom: 10px;       
 }
+
+
+.header-detale{
+    font-size: 14px;
+        color: var(--logo-color);
+        font weight: 500;
+}
+
+.header-detale:hover{
+    color: var(--header-color);
+}
+
+
+.header-detales,
+.header-detale{
+    position: relative;
+    padding-bottom: 10px;
+}
+
+
+.header-detales::after,
+.header-detale::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+
+    width: 0;
+    height: 4px;
+    border-radius: 2px;
+    background-color: var(--header-color);
+
+
+}
+
+.header-detales:hover::after,
+.header-detale:hover::after{
+    width: 100%;
+}
+
+.header-detales:hover,
+.header-detale:hover{
+    color: var(--header-color);
+}
+
+
+.current:hover{
+    color: var(--header-color);
+
+}
+
+
+
+
+.current::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+    background-color: var(--header-color);
+}
+
+
+
+
+
 
 .header-detale:hover{
     color: var(--header-color);
@@ -572,8 +642,8 @@ width: 100%;
 
     .hero{
         background-color: #FFFFFF;
-         margin-top: 94px;
-    margin-bottom: 94px;
+         padding-top: 94px;
+    padding-bottom: 94px;
     
     }
 
@@ -691,9 +761,7 @@ margin-top: 50px;
 
 
 
-    .hero-title{
-
-    }
+  
 
 
     .peshka-item{
