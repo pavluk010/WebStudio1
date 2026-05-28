@@ -176,7 +176,7 @@
 
 .header-detales::after{
     content: "";
-    position: absolute;
+    position: relative;
     left: 0;
     bottom: 0;
 
@@ -190,16 +190,21 @@
     color: var(--header-color);
 }
 
-.header-detale{
-    position: relative;
-    padding-bottom: 10px;       
+
+
+.header-detales:hover::after,
+.header-detale:hover::after{
+    bottom: -23px;
 }
+
+
+
 
 
 .header-detale{
     font-size: 14px;
         color: var(--logo-color);
-        font weight: 500;
+        font-weight: 500;
 }
 
 .header-detale:hover{
@@ -209,8 +214,10 @@
 
 .header-detales,
 .header-detale{
+    
     position: relative;
     padding-bottom: 10px;
+    
 }
 
 
@@ -220,6 +227,7 @@
     position: absolute;
     left: 0;
     bottom: 0;
+    top: 50;
 
     width: 0;
     height: 4px;
@@ -558,6 +566,8 @@ width: 100%;
         padding-bottom: 25px;
         
     }
+
+    
 
     .header-wrap{
         display: flex;
