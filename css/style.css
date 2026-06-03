@@ -233,13 +233,18 @@
     height: 4px;
     border-radius: 2px;
     background-color: var(--header-color);
-
-
 }
+
+
+
+
+
+
 
 .header-detales:hover::after,
 .header-detale:hover::after{
     width: 100%;
+    transition: width 0.3s ease;
 }
 
 .header-detales:hover,
@@ -253,6 +258,32 @@
 
 }
 
+
+
+.adventages-list{
+    content: "";
+    position: relative;
+}
+
+.adventages-list::after{
+    content: "";
+    position: absolute;
+    left: 0;
+   
+
+    width: 0;
+    height: 4px;
+    border-radius: 2px;
+    background-color: var(--header-color);
+}
+
+.adventages-list:hover::after{
+    color: var(--header-color);
+     width: 100%;
+    transition: width 250ms ease;
+    bottom: -34px;
+    
+}
 
 
 
@@ -276,6 +307,11 @@
 .header-detale:hover{
     color: var(--header-color);
 }
+
+
+
+
+
 
 
 
@@ -782,6 +818,7 @@ margin-top: 50px;
 
     .main-itemsf{
         width: 100%;
+        
     }
 
     .main-itemsf:hover{
@@ -789,6 +826,25 @@ margin-top: 50px;
             opacity: 1;
         }
     }
+
+
+.peshka{
+    content: "";
+      transition: transform 0.3s ease;
+     border-radius: 10px;
+     width: 100%;
+     height: 100%;
+}
+.peshka:hover{
+opacity: 0;
+transition-property: opacity,transform;
+transition-duration: 350ms;
+transition-delay: 100ms;
+transform: translateY(-50px);
+ box-shadow: 0 10px 25px rgba(0, 0, 0, 0.418);
+}
+
+
 
 
 
