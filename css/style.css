@@ -592,7 +592,7 @@ width: 100%;
     .container{
         width: 1200px;
     margin: 0 auto;
-        outline: 1px solid red;
+        
         padding-left: 15px;
         padding-right: 15px;
     }
@@ -867,3 +867,44 @@ padding-left: 24px;
 padding-right: 24px;
 opacity: 0;
     }
+
+
+
+
+
+    .main-button{
+animation-name: posluga;
+animation-duration: 2000ms;
+    }
+
+
+    @keyframes posluga{
+        0%{
+            transform: translateX(-1200px);
+        }
+
+        100%{
+            transform: translate(0);
+        }
+    }
+
+
+
+   .hero-title{
+animation-name: title;
+animation-duration: 2000ms;
+   } 
+
+
+
+   @keyframes title{
+
+0%{
+    transform: translateX(1200px);
+}
+
+ 100%{
+            transform: translateX(0);
+        }
+
+   }
