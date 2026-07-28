@@ -480,12 +480,13 @@ footer {
 }
 
 .container {
+   width: 100%;
   max-width: 1200px;
-  width: 1200px;
   margin: 0 auto;
   border: 1px solid red;
   padding-left: 15px;
   padding-right: 15px;
+   box-sizing: border-box;
 }
 
 .header {
@@ -525,9 +526,11 @@ footer {
   gap: 30px;
 }
 
+
+
 .work-item {
   margin-left: 0;
-  width: 370px;
+  flex: 1;
   height: 294px;
 }
 
@@ -600,7 +603,7 @@ footer {
   gap: 30px;
 
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+ grid-template-columns: 1fr;
   margin-top: 50px;
 }
 
@@ -625,7 +628,7 @@ footer {
 }
 
 .main-info {
-  display: flex;
+  
   gap: 30px;
 
   display: grid;
@@ -796,10 +799,11 @@ height: 92.0px;
 
 @media (min-width: 480px) {
   .container {
-    width: 480px;
+    max-width: 480px;
   }
   .hero-title {
-    width: 360px;
+     width: 100%;
+  width: 360px;
   }
   .main-button {
     width: 260px;
@@ -838,6 +842,7 @@ height: 92.0px;
    gap: 30px;
     margin-left: 30px;
     justify-content: center;
+    
 }
 }
 
@@ -858,7 +863,7 @@ height: 92.0px;
 
 @media (min-width: 768px) {
   .container {
-    width: 768px;
+    max-width: 768px;
   }
   .header {
     display: flex;
@@ -908,6 +913,10 @@ height: 92.0px;
     margin-left: 30px;
     justify-content: center;
 }
+.main-info{
+      grid-template-columns: repeat(2, 1fr);
+
+}
 }
 
 
@@ -932,7 +941,7 @@ height: 92.0px;
 
 @media (min-width: 1200px) {
   .container {
-    width: 1200px;
+    max-width: 1200px;
   }
   .header {
     display: flex;
@@ -980,6 +989,10 @@ height: 92.0px;
    gap: 30px;
     margin-left: 30px;
     justify-content: center;
+}
+.main-info{
+      grid-template-columns: repeat(3, 1fr);
+
 }
 
 
