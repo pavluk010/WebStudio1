@@ -287,13 +287,14 @@ display:grid;
   line-height: 1.8;
   letter-spacing: 0.96px;
   border-radius: 4px;
-  padding: 10px 30px;
+
   border: none;
   width: 100%;
-  max-width: 260px;
-  height: 50px;
+ 
   display: block;
-
+ padding: 10px 24px;
+  width: 216px;
+  height: 50px;
   margin: 0 auto;
 }
 
@@ -343,7 +344,7 @@ padding: 60px 0;
   line-height: normal;
   letter-spacing: 0.42px;
   text-transform: uppercase;
-
+display: flex;
 
 }
 
@@ -817,7 +818,32 @@ display: block;
   max-width: 360px;
   }
   .main-button {
-    width: 260px;
+   width: 216px;
+
+
+  }
+.footer {
+    text-align: center;
+  }
+
+  .webfooter {
+    display: block;
+    margin: 0 auto 20px;
+  }
+
+  .webfooter {
+    display: block;
+    margin: 0 auto 20px;
+  }
+
+  .footer-list {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+
+  .footer-address {
+    font-style: normal;
   }
   .adventages-listes{
   gap: 30px;
@@ -828,6 +854,11 @@ display: block;
     display: block;
     width: 100%;
     text-align: center;
+}
+ .team {
+  padding-top: 60px;
+  padding-bottom: 60px;
+
 }
 .work {
   padding-top: 94px;
@@ -887,6 +918,14 @@ display: block;
   .container {
     max-width: 768px;
   }
+ .footer {
+    text-align: left;
+  }
+
+  .webfooter {
+    display: block;
+    margin: 0;
+  }
 .header-wrap{
     flex-wrap: nowrap;
     justify-content: space-between;
@@ -896,6 +935,11 @@ display: block;
     padding-top: 21px;
     padding-bottom: 21px;
   }
+    .team {
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+}
 
   .logo {
     margin-right: 87px;
@@ -909,6 +953,9 @@ display: block;
     gap: 10px;
      margin-left:auto;
   }
+  .footer{
+     text-align: left;
+  }
 
   .adventages-listes {
   gap: 30px;
@@ -916,10 +963,15 @@ display: block;
    grid-template-columns: repeat(2, 1fr);
 
 }
+.main-button {
+width: 216.0px;
+
+   padding: 10px 10px;
+  }
 .title {
     display: block;
     width: 100%;
-    text-align: center;
+     text-align: left;
 }
 .work {
   padding-top: 94px;
@@ -996,6 +1048,22 @@ flex-wrap: nowrap;
       gap: 50px;
      
   }
+  .main-button{
+     width: 260px;
+  }
+   .footer {
+    text-align: left;
+  }
+
+  .webfooter {
+    display: block;
+    margin: 0;
+  }
+  .team {
+  padding-top: 94px;
+  padding-bottom: 94px;
+
+}
   .logo {
     font-size: 24px;
     letter-spacing: 0.72px;
