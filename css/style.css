@@ -35,6 +35,7 @@ body {
   line-height: normal;
   letter-spacing: 0.78px;
   margin-right: 20px;
+
 }
 
 .logo {
@@ -345,7 +346,7 @@ padding: 60px 0;
   letter-spacing: 0.42px;
   text-transform: uppercase;
 display: flex;
-
+justify-content: center;
 }
 
 .header-items {
@@ -464,6 +465,9 @@ display: none;
 footer {
 padding: 40px 0;
   background-color: var(--background-footer-color);
+  justify-content: center;
+  display: flex;
+  align-items: center;
 }
 
 .footer-mail {
@@ -765,6 +769,7 @@ display: block;
 
 
 
+
 .main-button {
   animation-name: posluga;
   animation-duration: 2000ms;
@@ -822,6 +827,7 @@ display: block;
 
 
   }
+  
 .footer {
     text-align: center;
   }
@@ -896,6 +902,18 @@ display: block;
   
   letter-spacing: 0.42px;
 }
+
+.team {
+  padding-top: 60px;
+  padding-bottom: 30px;
+
+}
+ .main-list {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    justify-content: center;
+    gap: 8px;
+  }
 
 }
 
@@ -1013,6 +1031,12 @@ flex-wrap: nowrap;
    flex-wrap: nowrap;
     gap:50px;
 }
+.main-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  justify-content: center;
+}
 }
 
 
@@ -1044,6 +1068,12 @@ flex-wrap: nowrap;
     padding-top: 24px;
     padding-bottom: 25px;
   }
+  .main-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  justify-content: center;
+}
   .header-list{
       gap: 50px;
      
@@ -1086,10 +1116,16 @@ flex-wrap: nowrap;
 
 }
 
+.team {
+  padding-top: 94px;
+  padding-bottom: 94px;
+
+}
+
 .title {
     display: block;
     width: 100%;
-    text-align: center;
+    
 }
 .work {
   padding-top: 94px;
