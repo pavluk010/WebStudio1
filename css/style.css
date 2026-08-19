@@ -790,7 +790,17 @@ display:grid;
   opacity: 0;
 }
 
+.overlay {
+    position: fixed;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+    display: none;
+}
 
+.overlay.is-open {
+    display: block;
+}
 
 
 .webfooter{
@@ -1112,8 +1122,22 @@ height: 35.0px;
 
 
 
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 
+    background-color: rgba(0, 0, 0, 0.534);
 
+    z-index: 999;
+    display: none;
+}
+
+.overlay.is-open {
+    display: block;
+}
 
 
 .modal {
@@ -1132,12 +1156,15 @@ height: 796.0px;
     inset: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.8);
     z-index: 1000;
 
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.is-hidden {
+    display: none;
 }
 
 .modal {

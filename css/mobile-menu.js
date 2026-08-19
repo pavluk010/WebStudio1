@@ -1,15 +1,18 @@
-const openModalBtn = document.querySelector(".open");
-const closeBtnModal = document.querySelector(".close-menu");
-const backdropRef = document.querySelector(".backdrop");
+const openButton = document.querySelector(".open");
+const closeButton = document.querySelector(".close-menu");
+const backdrop = document.querySelector(".backdrop");
+const overlay = document.querySelector(".overlay");
 
-console.log(openModalBtn);
-console.log(closeBtnModal);
-console.log(backdropRef);
+function openMenu() {
+    backdrop.classList.remove("is-hidden");
+    overlay.classList.add("is-open");
+}
 
-openModalBtn.addEventListener("click", () => {
-    backdropRef.classList.remove("is-hidden");
-});
+function closeMenu() {
+    backdrop.classList.add("is-hidden");
+    overlay.classList.remove("is-open");
+}
 
-closeBtnModal.addEventListener("click", () => {
-    backdropRef.classList.add("is-hidden");
-});
+openButton.addEventListener("click", openMenu);
+closeButton.addEventListener("click", closeMenu);
+overlay.addEventListener("click", closeMenu);
