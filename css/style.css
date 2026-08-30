@@ -81,9 +81,16 @@ display:grid;
   
 }
 
+
+
+
+
+
 .team-card {
   background-color: #ffffff;
    width:100%;
+box-shadow: 0px 2px 0px 0px #AFB1B8;
+border-radius: 5px;
 }
 
 .hero-title {
@@ -415,7 +422,11 @@ a {
 
 .hero-section {
   text-align: center;
-  background-color: var(--background-footer-color);
+    background-image: url(/pages/image/bcgphone.png);
+  background-position: center;
+ background-size: cover;
+background-repeat: no-repeat;
+
 padding: 60px 0;
 }
 
@@ -701,6 +712,7 @@ display:grid;
 .filter-part:hover {
   background-color: var(--header-color);
   color: #ffffff;
+  box-shadow: 0px 4px 0px 0px #AFB1B8;
 }
 
 .main-info {
@@ -714,6 +726,7 @@ display:grid;
 
 .section-div {
   padding: 24px;
+  box-shadow: 0px 2px 0px 0px #AFB1B8;
 }
 
 .footer-info {
@@ -1256,6 +1269,10 @@ height: 796.0px;
 
 
   }
+
+
+
+
   .header-navigation {
  display: none;
 }
@@ -1386,6 +1403,9 @@ height: 796.0px;
 display: none;
 
 
+}
+.hero-section{
+  background-image: url(/pages/image/tablet-img.png);
 }
 
 
@@ -1604,8 +1624,9 @@ display: none;
 }
 .hero-section {
   text-align: center;
-  background-color: var(--background-footer-color);
-padding: 200px 0;
+  background-color: #fff;
+background-image: url(/pages/image/bcgdesktop.png);
+  padding: 200px 0;
 }
  .work-list {
     display: flex;
@@ -1638,6 +1659,7 @@ padding: 200px 0;
   .hero-section {
     padding-bottom: 200px;
     padding-top: 200px;
+    
   }
   .hero-title {
     font-size: 44px;
