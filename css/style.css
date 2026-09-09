@@ -488,6 +488,25 @@ a {
   margin-bottom: 50px;
 }
 
+
+
+
+
+.header-icons{
+  width: 15.0px;
+height: 14.0px;
+
+}
+
+.header-icons:hover{
+  fill: var(--header-color);
+}
+
+
+.header-icon:hover{
+  fill: var(--header-color);
+}
+
 .team {
   padding-top: 94px;
   padding-bottom: 94px;
@@ -1134,8 +1153,8 @@ padding-left: 16px;
 
 .footer-button{
   background-color: var(--header-color);
-  width: 200.0px;
-height: 50.0px;
+  width: 170.0px;
+height: 30.0px;
 color: #FFF;
 text-align: center;
 font-family: Roboto;
@@ -1200,7 +1219,7 @@ text-transform: uppercase;
 }
 
 .join-apps {
-  margin-top: 30px;
+  margin: 30px;
 }
 
 .subscribe {
@@ -1757,6 +1776,9 @@ padding-top: 30px;
     text-align: left;
   }
 
+
+
+  
   .column {
     display: flex;
     flex-direction: column;
@@ -1918,7 +1940,14 @@ border-radius: 50%;
   width: 20.0px;
 height: 20.0px;
 fill: #AFB1B8;
+ 
+}
 
+
+.team-elem{
+   background-color:  rgba(255, 255, 255, 0.10);
+  padding: 12px;
+  border-radius: 999px;
 }
 
 
@@ -1959,7 +1988,11 @@ fill: #AFB1B8;
   width: 106.0px;
 height: 60.0px;
 fill: #AFB1B8;
+
+
 }
+
+
 
 
 .client-link{
