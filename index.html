@@ -113,15 +113,16 @@
             <a href="mailto:info@devstudio.com" class="adventages-list">
               <svg class="header-icons">
                 <use href="./pages/image/symbol-defs.svg#envelope"></use>
-            </svg>
+              </svg>
               info@devstudio.com
             </a>
           </li>
 
           <li class="header-contact">
-            <a href="tel:+380961111111" class="adventages-list"><svg class="header-icons">
+            <a href="tel:+380961111111" class="adventages-list"
+              ><svg class="header-icons">
                 <use href="./pages/image/symbol-defs.svg#smartphone"></use>
-            </svg>
+              </svg>
               +38 096 111 11 11
             </a>
           </li>
@@ -176,25 +177,35 @@
           <h2 class="work-title">Чим ми займаємося</h2>
           <ul class="work-list">
             <li class="work-item">
+
+              <picture>
+                <source srcset="./desktop-img/comp-apps@1px.webp 1x, ./desktop-img/comp-apps@2px.webp 2x" media="(min-width:1200px)">
               <img
                 src="./pages/image/worker.png"
                 class="work-image"
                 alt="image"
               />
+              </picture>
             </li>
             <li class="work-item">
+              <picture>
+                <source srcset="./desktop-img/mobile-apps@1px.webp 1x, ./desktop-img/mobile-apps@2px.webp 2x" media="(min-width:1200px)">
               <img
                 src="./pages/image/phone.png"
                 class="work-image"
                 alt="image"
               />
+              </picture>
             </li>
             <li class="work-item">
+              <picture>
+                <source srcset="./desktop-img/design@1px.webp 1x, ./desktop-img/design@2px.webp 2x" media="(min-width:1200px)">
               <img
                 src="./pages/image/tablet.png"
                 class="work-image"
                 alt="imggg"
               />
+              </picture>
             </li>
           </ul>
         </div>
@@ -205,173 +216,282 @@
           <ul class="team-list">
             <li class="team-item">
               <div class="team-card">
-                <img
-                  src="./pages/image/man.jpg"
-                  alt="mann"
-                  class="team-image"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./desktop-img/igor-desktop@1px.webp 1x,
+                      ./desktop-img/igor-desktop@2px.webp 2x
+                    "
+                    media="(min-width:1200px)"
+                  />
+                  <source
+                    srcset="
+                      ./tablet-img/igor-tablet@1x.webp 1x,
+                      ./tablet-img/igor-tablet@2x.webp 2x
+                    "
+                    media="(min-width:768px)"
+                  />
+                  <source
+                    srcset="
+                      ./mobile-img/igor-mobil@1x.webp 1x,
+                      ./mobile-img/igor-mobil@2x.webp 2x
+                    "
+                    media="(max-width:767px)"
+                  />
+                  <img
+                    src="./pages/image/man.jpg"
+                    alt="mann"
+                    class="team-image"
+                  />
+                </picture>
                 <div class="team-div">
                   <h3 class="main-person">Ігор Дем'яненко</h3>
                   <p class="team-caption">Product Designer</p>
-                <ul class="team-items">
+                  <ul class="team-items">
                     <li class="team-elem">
-                        <a href="#" class="team-link">
-                            <svg class="team-icon">
-                                <use href="./pages/image/symbol-defs.svg#instagram"></use>
-                            </svg>
-                        </a>
+                      <a href="#" class="team-link">
+                        <svg class="team-icon">
+                          <use
+                            href="./pages/image/symbol-defs.svg#instagram"
+                          ></use>
+                        </svg>
+                      </a>
                     </li>
                     <li class="team-elem">
-                        <a href="#" class="team-link">
-                            <svg class="team-icon">
-                                <use href="./pages/image/symbol-defs.svg#twitter"></use>
-                            </svg>
-                        </a>
+                      <a href="#" class="team-link">
+                        <svg class="team-icon">
+                          <use
+                            href="./pages/image/symbol-defs.svg#twitter"
+                          ></use>
+                        </svg>
+                      </a>
                     </li>
                     <li class="team-elem">
-                        <a href="" class="team-link">
-                            <svg class="team-icon">
-                                <use href="./pages/image/symbol-defs.svg#facebook"></use>
-                            </svg>
-                        </a>
+                      <a href="" class="team-link">
+                        <svg class="team-icon">
+                          <use
+                            href="./pages/image/symbol-defs.svg#facebook"
+                          ></use>
+                        </svg>
+                      </a>
                     </li>
                     <li class="team-elem">
-                        <a href="" class="team-link">
-                            <svg class="team-icon">
-                                <use href="./pages/image/symbol-defs.svg#linkedin"></use>
-                            </svg>
-                        </a>
+                      <a href="" class="team-link">
+                        <svg class="team-icon">
+                          <use
+                            href="./pages/image/symbol-defs.svg#linkedin"
+                          ></use>
+                        </svg>
+                      </a>
                     </li>
-                </ul>
+                  </ul>
                 </div>
               </div>
             </li>
             <li class="team-item">
               <div class="team-card">
-                <img
-                  src="./pages/image/repina.jpg"
-                  class="team-image"
-                  alt="woman"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./desktop-img/olga-desktop@1px.webp 1x,
+                      ./desktop-img/olga-desktop@2px.webp 2x
+                    "
+                    media="(min-width:1200px)"
+                  />
+                  <source
+                    srcset="
+                      ./tablet-img/olga-tablet@1x.webp 1x,
+                      ./tablet-img/olga-tablet@2x.webp 2x
+                    "
+                    media="(min-width:768px)"
+                  />
+                  <source
+                    srcset="
+                      ./mobile-img/olga-mobile@1x.webp 1x,
+                      ./mobile-img/olga-mobile@2x.webp 2x
+                    "
+                    media="(max-width:767px)"
+                  />
+
+                  <img
+                    src="./pages/image/repina.jpg"
+                    class="team-image"
+                    alt="woman"
+                  />
+                </picture>
                 <div class="team-div">
                   <h3 class="main-person">Ольга Рєпіна</h3>
                   <p class="team-caption">Frontend Developer</p>
                   <ul class="team-items">
                     <li class="team-elem">
-                        <a href="" class="team-link">
-                            <svg class="team-icon">
-                                <use href="./pages/image/symbol-defs.svg#instagram"></use>
-                            </svg>
-                        </a>
+                      <a href="" class="team-link">
+                        <svg class="team-icon">
+                          <use
+                            href="./pages/image/symbol-defs.svg#instagram"
+                          ></use>
+                        </svg>
+                      </a>
                     </li>
                     <li class="team-elem">
-                        <a href="" class="team-link">
-                            <svg class="team-icon">
-                                <use href="./pages/image/symbol-defs.svg#twitter"></use>
-                            </svg>
-                        </a>
+                      <a href="" class="team-link">
+                        <svg class="team-icon">
+                          <use
+                            href="./pages/image/symbol-defs.svg#twitter"
+                          ></use>
+                        </svg>
+                      </a>
                     </li>
                     <li class="team-elem">
-                        <a href="" class="team-link">
-                            <svg class="team-icon">
-                                <use href="./pages/image/symbol-defs.svg#facebook"></use>
-                            </svg>
-                        </a>
+                      <a href="" class="team-link">
+                        <svg class="team-icon">
+                          <use
+                            href="./pages/image/symbol-defs.svg#facebook"
+                          ></use>
+                        </svg>
+                      </a>
                     </li>
                     <li class="team-elem">
-                        <a href="" class="team-link">
-                            <svg class="team-icon">
-                                <use href="./pages/image/symbol-defs.svg#linkedin"></use>
-                            </svg>
-                        </a>
+                      <a href="" class="team-link">
+                        <svg class="team-icon">
+                          <use
+                            href="./pages/image/symbol-defs.svg#linkedin"
+                          ></use>
+                        </svg>
+                      </a>
                     </li>
-                </ul>
+                  </ul>
                 </div>
               </div>
             </li>
             <li class="team-item">
               <div class="team-card">
-                <img
-                  src="./pages/image/tarasov.jpg"
-                  class="team-image"
-                  alt="mantwo"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./desktop-img/mykola-desktop@1px.webp 1x,
+                      ./desktop-img/mykola-desktop@2px.webp 2x
+                    "
+                    media="(min-width:1200px)"
+                  />
+                  <source
+                    srcset="
+                      ./tablet-img/mykola-tablet@1x.webp 1x,
+                      ./tablet-img/mykola-tablet@2x.webp 2x
+                    "
+                    media="(min-width:768px)"
+                  />
+                  <source
+                    srcset="
+                      ./mobile-img/mykola-mobile@1x.webp 1x,
+                      ./mobile-img/mykola-mobile@2x.webp 2x
+                    "
+                    media="(max-width:767px)"
+                  />
+
+                  <img
+                    src="./pages/image/tarasov.jpg"
+                    class="team-image"
+                    alt="mantwo"
+                  />
+                </picture>
                 <div class="team-div">
                   <h3 class="main-person">Микола Тарасов</h3>
                   <p class="team-caption">Marketing</p>
                   <ul class="team-items">
                     <li class="team-elem">
-                        <a href="" class="team-link">
-                            <svg class="team-icon">
-                                <use href="./pages/image/symbol-defs.svg#instagram"></use>
-                            </svg>
-                        </a>
+                      <a href="" class="team-link">
+                        <svg class="team-icon">
+                          <use
+                            href="./pages/image/symbol-defs.svg#instagram"
+                          ></use>
+                        </svg>
+                      </a>
                     </li>
                     <li class="team-elem">
-                        <a href="" class="team-link">
-                            <svg class="team-icon">
-                                <use href="./pages/image/symbol-defs.svg#twitter"></use>
-                            </svg>
-                        </a>
+                      <a href="" class="team-link">
+                        <svg class="team-icon">
+                          <use
+                            href="./pages/image/symbol-defs.svg#twitter"
+                          ></use>
+                        </svg>
+                      </a>
                     </li>
                     <li class="team-elem">
-                        <a href="" class="team-link">
-                            <svg class="team-icon">
-                                <use href="./pages/image/symbol-defs.svg#facebook"></use>
-                            </svg>
-                        </a>
+                      <a href="" class="team-link">
+                        <svg class="team-icon">
+                          <use
+                            href="./pages/image/symbol-defs.svg#facebook"
+                          ></use>
+                        </svg>
+                      </a>
                     </li>
                     <li class="team-elem">
-                        <a href="" class="team-link">
-                            <svg class="team-icon">
-                                <use href="./pages/image/symbol-defs.svg#linkedin"></use>
-                            </svg>
-                        </a>
+                      <a href="" class="team-link">
+                        <svg class="team-icon">
+                          <use
+                            href="./pages/image/symbol-defs.svg#linkedin"
+                          ></use>
+                        </svg>
+                      </a>
                     </li>
-                </ul>
+                  </ul>
                 </div>
               </div>
             </li>
             <li class="team-item">
               <div class="team-card">
+                <picture>
+<source srcset="./desktop-img/yermakov-desktop@1px.webp 1x, ./desktop-img/yermakov-desktop@2px.webp 2x" media="(min-width:1200px)">
+<source srcset="./tablet-img/mychailo-tablet@1x.webp 1x, ./tablet-img/mychailo-tablet@2x.webp 2x" media="(min-width:768px)">
+<source srcset="./mobile-img/mychailo-mobile@1x.webp 1x, ./mobile-img/mychailo-mobile@2x.webp 2x" media="(max-width:767px)">
+                
                 <img
                   src="./pages/image/ermakov.jpg"
                   class="team-image"
                   alt="manthree"
                 />
+                </picture>
                 <div class="team-div">
                   <h3 class="main-person">Михайло Єрмаков</h3>
                   <p class="team-caption">UI Designer</p>
                   <ul class="team-items">
                     <li class="team-elem">
-                        <a href="" class="team-link">
-                            <svg class="team-icon">
-                                <use href="./pages/image/symbol-defs.svg#instagram"></use>
-                            </svg>
-                        </a>
+                      <a href="" class="team-link">
+                        <svg class="team-icon">
+                          <use
+                            href="./pages/image/symbol-defs.svg#instagram"
+                          ></use>
+                        </svg>
+                      </a>
                     </li>
                     <li class="team-elem">
-                        <a href="" class="team-link">
-                            <svg class="team-icon">
-                                <use href="./pages/image/symbol-defs.svg#twitter"></use>
-                            </svg>
-                        </a>
+                      <a href="" class="team-link">
+                        <svg class="team-icon">
+                          <use
+                            href="./pages/image/symbol-defs.svg#twitter"
+                          ></use>
+                        </svg>
+                      </a>
                     </li>
                     <li class="team-elem">
-                        <a href="" class="team-link">
-                            <svg class="team-icon">
-                                <use href="./pages/image/symbol-defs.svg#facebook"></use>
-                            </svg>
-                        </a>
+                      <a href="" class="team-link">
+                        <svg class="team-icon">
+                          <use
+                            href="./pages/image/symbol-defs.svg#facebook"
+                          ></use>
+                        </svg>
+                      </a>
                     </li>
                     <li class="team-elem">
-                        <a href="" class="team-link">
-                            <svg class="team-icon">
-                                <use href="./pages/image/symbol-defs.svg#linkedin"></use>
-                            </svg>
-                        </a>
+                      <a href="" class="team-link">
+                        <svg class="team-icon">
+                          <use
+                            href="./pages/image/symbol-defs.svg#linkedin"
+                          ></use>
+                        </svg>
+                      </a>
                     </li>
-                </ul>
+                  </ul>
                 </div>
               </div>
             </li>
@@ -382,147 +502,135 @@
       <section class="clients">
         <div class="container">
           <h3 class="clients-title">Постійні клієнти</h3>
-         <ul class="client-list">
+          <ul class="client-list">
             <li class="client-item">
-                <a href="" class="client-link">
-                    <svg class="client-icon">
-                        <use href="./pages/image/symbol-defs.svg#logoone"></use>
-                    </svg>
-                </a>
+              <a href="" class="client-link">
+                <svg class="client-icon">
+                  <use href="./pages/image/symbol-defs.svg#logoone"></use>
+                </svg>
+              </a>
             </li>
             <li class="client-item">
-                <a href="" class="client-link">
-                    <svg class="client-icon">
-                        <use href="./pages/image/symbol-defs.svg#logotwo"></use>
-                    </svg>
-                </a>
+              <a href="" class="client-link">
+                <svg class="client-icon">
+                  <use href="./pages/image/symbol-defs.svg#logotwo"></use>
+                </svg>
+              </a>
             </li>
             <li class="client-item">
-                <a href="" class="client-link">
-                    <svg class="client-icon">
-                        <use href="./pages/image/symbol-defs.svg#logothree"></use>
-                    </svg>
-                </a>
+              <a href="" class="client-link">
+                <svg class="client-icon">
+                  <use href="./pages/image/symbol-defs.svg#logothree"></use>
+                </svg>
+              </a>
             </li>
             <li class="client-item">
-                <a href="" class="client-link">
-                    <svg class="client-icon">
-                        <use href="./pages/image/symbol-defs.svg#logofour"></use>
-                    </svg>
-                </a>
+              <a href="" class="client-link">
+                <svg class="client-icon">
+                  <use href="./pages/image/symbol-defs.svg#logofour"></use>
+                </svg>
+              </a>
             </li>
             <li class="client-item">
-                <a href="" class="client-link">
-                    <svg class="client-icon">
-                        <use href="./pages/image/symbol-defs.svg#logofive"></use>
-                    </svg>
-                </a>
+              <a href="" class="client-link">
+                <svg class="client-icon">
+                  <use href="./pages/image/symbol-defs.svg#logofive"></use>
+                </svg>
+              </a>
             </li>
             <li class="client-item">
-                <a href="" class="client-link">
-                    <svg class="client-icon">
-                        <use href="./pages/image/symbol-defs.svg#logosix"></use>
-                    </svg>
-                </a>
+              <a href="" class="client-link">
+                <svg class="client-icon">
+                  <use href="./pages/image/symbol-defs.svg#logosix"></use>
+                </svg>
+              </a>
             </li>
-         </ul>
+          </ul>
         </div>
       </section>
     </main>
     <footer class="footer">
-
-
-
-
       <div class="container">
-        
         <div class="column">
-        <a href="#"
-          ><img
-            class="webfooter"
-            src="./pages/image/webfooter.png"
-            alt="webfooter"
-        /></a>
+          <a href="#"
+            ><img
+              class="webfooter"
+              src="./pages/image/webfooter.png"
+              alt="webfooter"
+          /></a>
 
-        <address class="footer-address">
-          <ul class="footer-list">
-            <li class="footer-items">
-              <a
-                href="https://www.google.com.ua/maps/search/%D0%BC.+%D0%9A%D0%B8%D1%97%D0%B2,+%D0%BF%D1%80-%D1%82+%D0%9B%D0%B5%D1%81%D1%96+%D0%A3%D0%BA%D1%80%D0%B0%D1%97%D0%BD%D0%BA%D0%B8,+26/@50.4758888,30.4320272,18780m/data=!3m2!1e3!4b1?hl=uk&entry=ttu&g_ep=EgoyMDI2MDQwNy4wIKXMDSoASAFQAw%3D%3D"
-                target="_blank"
-                class="footer-link"
-                >м. Київ, пр-т Лесі Українки, 26</a
-              >.
+          <address class="footer-address">
+            <ul class="footer-list">
+              <li class="footer-items">
+                <a
+                  href="https://www.google.com.ua/maps/search/%D0%BC.+%D0%9A%D0%B8%D1%97%D0%B2,+%D0%BF%D1%80-%D1%82+%D0%9B%D0%B5%D1%81%D1%96+%D0%A3%D0%BA%D1%80%D0%B0%D1%97%D0%BD%D0%BA%D0%B8,+26/@50.4758888,30.4320272,18780m/data=!3m2!1e3!4b1?hl=uk&entry=ttu&g_ep=EgoyMDI2MDQwNy4wIKXMDSoASAFQAw%3D%3D"
+                  target="_blank"
+                  class="footer-link"
+                  >м. Київ, пр-т Лесі Українки, 26</a
+                >.
+              </li>
+              <li class="footer-items">
+                <a href="mailto:info@devstudio.com" class="footer-mail"
+                  >info@devstudio.com</a
+                >
+              </li>
+              <li class="footer-items">
+                <a href="tel:+380961111111" class="footer-number"
+                  >+38 096 111 11 11</a
+                >
+              </li>
+            </ul>
+          </address>
+        </div>
+
+        <div class="join-apps">
+          <p class="join-group">Приєднуйтесь</p>
+          <ul class="team-items">
+            <li class="team-elem">
+              <a href="" class="team-link">
+                <svg class="team-icon">
+                  <use href="./pages/image/symbol-defs.svg#instagram"></use>
+                </svg>
+              </a>
             </li>
-            <li class="footer-items">
-              <a href="mailto:info@devstudio.com" class="footer-mail"
-                >info@devstudio.com</a
-              >
+            <li class="team-elem">
+              <a href="" class="team-link">
+                <svg class="team-icon">
+                  <use href="./pages/image/symbol-defs.svg#twitter"></use>
+                </svg>
+              </a>
             </li>
-            <li class="footer-items">
-              <a href="tel:+380961111111" class="footer-number"
-                >+38 096 111 11 11</a
-              >
+            <li class="team-elem">
+              <a href="" class="team-link">
+                <svg class="team-icon">
+                  <use href="./pages/image/symbol-defs.svg#facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="team-elem">
+              <a href="" class="team-link">
+                <svg class="team-icon">
+                  <use href="./pages/image/symbol-defs.svg#linkedin"></use>
+                </svg>
+              </a>
             </li>
           </ul>
-  </address>
- </div>
-      
-      
-<div class="join-apps">
+        </div>
+        <div class="subscribe">
+          <p class="footer-subs">Підпишіться на розсилку</p>
 
+          <div class="foot-btn">
+            <input class="footer-inp" type="text" placeholder="E-mail" />
 
-<p class="join-group">Приєднуйтесь</p>
-<ul class="team-items">
-                    <li class="team-elem">
-                        <a href="" class="team-link">
-                            <svg class="team-icon">
-                                <use href="./pages/image/symbol-defs.svg#instagram"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="team-elem">
-                        <a href="" class="team-link">
-                            <svg class="team-icon">
-                                <use href="./pages/image/symbol-defs.svg#twitter"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="team-elem">
-                        <a href="" class="team-link">
-                            <svg class="team-icon">
-                                <use href="./pages/image/symbol-defs.svg#facebook"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="team-elem">
-                        <a href="" class="team-link">
-                            <svg class="team-icon">
-                                <use href="./pages/image/symbol-defs.svg#linkedin"></use>
-                            </svg>
-                        </a>
-                    </li>
-                </ul>
+            <button class="footer-button" type="button">
+              Підписатися
+              <svg class="footer-icon">
+                <use href="./pages/image/symbol-defs.svg#send"></use>
+              </svg>
+            </button>
+          </div>
+        </div>
       </div>
-<div class="subscribe">
-  <p class="footer-subs">Підпишіться на розсилку</p>
-
-  <div class="foot-btn">
-    <input class="footer-inp" type="text" placeholder="E-mail">
-
-    <button class="footer-button" type="button">
-      Підписатися
-      <svg class="footer-icon">
-        <use href="./pages/image/symbol-defs.svg#send"></use>
-      </svg>
-    </button>
-  </div>
-</div>
-</div>
-    </div>
-
-
-
     </footer>
 
     <script src="./css/mobile-menu.js"></script>

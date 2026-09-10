@@ -411,6 +411,17 @@ a {
   padding: 60px 0;
 }
 
+
+
+.mobile-items a:hover {
+  color: var(--header-color);
+}
+
+.mobile-items a:hover .mobile-items-list {
+  color: var(--header-color);
+}
+
+
 .footer-logo {
   color: #000;
   font-family: Raleway;
@@ -496,6 +507,14 @@ a {
   width: 15.0px;
 height: 14.0px;
 
+}
+
+.header-contact a:hover {
+  color: var(--header-color);
+}
+
+.header-contact a:hover .header-icons {
+  fill: var(--header-color);
 }
 
 .header-icons:hover{
@@ -1490,14 +1509,9 @@ width: 100%;
     gap: 15px;
   }
 
-.join-group{
-padding-top: 30px;
-}
 
-.footer-subs{
-  padding-top: 30px;
 
-}
+
 
 
 .footer-inp{
@@ -1772,11 +1786,13 @@ padding-top: 30px;
     flex-direction: row;
     flex-wrap: nowrap;
     align-items: flex-start;
-    justify-content: space-between;
     text-align: left;
   }
 
-
+.join-apps{
+  margin-left: 70px;
+  margin-right: 93px;
+}
 
   
   .column {
@@ -1785,9 +1801,7 @@ padding-top: 30px;
     align-items: flex-start;
   }
 
-  .join-apps {
-    margin: 0;
-  }
+
 
   .subscribe {
     width: auto;
@@ -1942,11 +1956,20 @@ height: 20.0px;
 fill: #AFB1B8;
  
 }
+.header-contacts .adventages-list {
+  color: #757575;
+}
 
+.header-contacts .adventages-list:hover {
+  color: #2196F3;
+}
+
+.header-contacts .header-icons {
+  fill: currentColor;
+}
 
 .team-elem{
    background-color:  rgba(255, 255, 255, 0.10);
-  padding: 12px;
   border-radius: 999px;
 }
 
