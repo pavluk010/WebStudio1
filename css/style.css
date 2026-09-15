@@ -48,7 +48,6 @@ body {
   font-weight: 700;
   line-height: normal;
   letter-spacing: 0.78px;
-  margin-right: auto;
 }
 
 .header-item {
@@ -341,6 +340,7 @@ box-shadow: 0 4px 6px rgba(128, 128, 128, 0.25);
   line-height: 1.14;
   letter-spacing: 0.28px;
   text-decoration: none;
+  transition: 0.3s;
 }
 
 .header-contact a:hover {
@@ -399,7 +399,6 @@ a {
       rgba(47, 48, 58, 0.40)
     ),
     url("../pages/image/phonewebp.webp");
-
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -475,6 +474,7 @@ a {
 .work {
   display: none;
 }
+
 
 .work-title {
   color: var(--mainul-color);
@@ -634,6 +634,8 @@ footer {
   padding: 0 15px;
   margin: 0 auto;
   box-sizing: border-box;
+  outline: 1px solid red
+  ;
 }
 
 .header {
@@ -642,10 +644,9 @@ footer {
 }
 
 .header-wrap {
-  flex-wrap: wrap;
-  display: flex;
-
+   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
 .header-list {
@@ -855,9 +856,10 @@ box-shadow: 0 4px 6px rgba(128, 128, 128, 0.25);
   display: block;
 }
 
-.webfooter {
-  width: 135px;
+.webfooter{
+width: 135px;
   height: 19px;
+
 }
 
 .clients-title {
@@ -1235,15 +1237,49 @@ text-transform: uppercase;
 }
 
 .column {
-  display: flex;
+ display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
 .footer-list {
   margin: 0;
   padding: 0;
 }
+.subscribe {
+  width: 100%;
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
+.footer-subs {
+  margin: 0 0 20px;
+  text-align: center;
+}
+
+.foot-btn {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+.footer-inp {
+  width: 100%;
+  max-width: none;
+  height: 40px;
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.footer-button {
+  width: 170px;
+  height: 40px;
+  margin: 0;
+}
 .footer-items {
   margin-bottom: 10px;
 }
@@ -1578,7 +1614,7 @@ width: 100%;
   }
 
   .join-apps {
-    margin-left: 70px;
+
     margin-top: 0;
   }
 
@@ -1603,6 +1639,16 @@ width: 100%;
     padding-top: 60px;
     padding-bottom: 60px;
   }
+
+
+
+.join-apps{
+  margin-left: 165px;
+}
+
+
+
+
 
   .logo {
     margin-right: 87px;
@@ -1719,10 +1765,7 @@ width: 100%;
     display: block;
   }
 
-  .join-apps {
-    margin-left: 70px;
 
-  }
 
   .join-group {
     margin: 0 0 20px;
@@ -1796,19 +1839,29 @@ width: 100%;
   }
 
   .footer .container {
-    width: 100%;
-    max-width: 1200px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    align-items: flex-start;
-    text-align: left;
+     display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+  box-sizing: border-box;
   }
 
-.join-apps{
-  margin-left: 70px;
-  margin-right: 93px;
+.column {
+  flex-shrink: 0;
 }
+
+.join-apps {
+  margin: 0;
+}
+
+.subscribe {
+  margin: 0;
+}
+
 
   
   .column {
@@ -1835,10 +1888,13 @@ width: 100%;
   }
 
   .footer-inp {
-    width: 500px;
-  max-width: 50%;
+    width: 358px;
+  max-width: none;
   box-sizing: border-box;
   }
+
+
+
 
   .footer-button {
     width: 200px;
@@ -1956,6 +2012,7 @@ display: flex;
 justify-content: center;
 align-items: center;
 border-radius: 50%;
+transition: 0.3s;
 }
 
 
@@ -1971,7 +2028,7 @@ border-radius: 50%;
   width: 20.0px;
 height: 20.0px;
 fill: #AFB1B8;
- 
+transition: 0.3s; 
 }
 .header-contacts .adventages-list {
   color: #757575;
@@ -1983,6 +2040,7 @@ fill: #AFB1B8;
 
 .header-contacts .header-icons {
   fill: currentColor;
+  transition: 0.3s;
 }
 
 .team-elem{
@@ -2022,7 +2080,7 @@ fill: #AFB1B8;
   width: 106.0px;
 height: 60.0px;
 fill: #AFB1B8;
-
+transition: 0.3s;
 
 }
 
@@ -2030,7 +2088,7 @@ fill: #AFB1B8;
 
 
 .client-link{
-  
+  transition: 0.3s;
   border-radius: 4px;
 border: 1px solid #AFB1B8;
 width: 170.0px;
