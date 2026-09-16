@@ -398,7 +398,11 @@ a {
       rgba(47, 48, 58, 0.40),
       rgba(47, 48, 58, 0.40)
     ),
-    url("../pages/image/phonewebp.webp");
+    image-set(
+      url("../mobile-img/heroimg-mobile@1x.webp") 1x,
+      url("../mobile-img/heroimg-mobile@2x.webp") 2x
+    );
+
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -861,6 +865,10 @@ width: 135px;
   height: 19px;
 
 }
+
+
+
+
 
 .clients-title {
   color: #212121;
@@ -1741,12 +1749,15 @@ width: 100%;
   .hero-section {
      text-align: center;
 
-  background-image:
-    linear-gradient(
-      rgba(47, 48, 58, 0.40),
-      rgba(47, 48, 58, 0.40)
-    ),
-    url("../pages/image/tabletwebp.webp");
+  background-image: 
+  linear-gradient(
+    rgba(47, 48, 58, 0.40),
+    rgba(47, 48, 58, 0.40)
+  ),
+  image-set(
+    url("../tablet-img/heroimg-tablet@1x.webp") 1x,
+    url("../tablet-img/heroimg-tablet@2x.webp") 2x
+  );
 
   background-position: center;
   background-size: cover;
@@ -1931,11 +1942,15 @@ width: 100%;
     grid-template-columns: repeat(3, 1fr);
   }
   .hero-section {
-    text-align: center;
-    background-color: #fff;
-    background-image: url(/pages/image/webpbcg.webp);
-   
-    padding: 200px 0;
+    background-image:
+      linear-gradient(
+        rgba(47, 48, 58, 0.40),
+        rgba(47, 48, 58, 0.40)
+      ),
+      image-set(
+        url("../desktop-img/heroimg-destop@1x.webp") 1x,
+        url("../desktop-img/heroimg-destop@2x.webp") 2x
+      );
   }
   .work-list {
     display: flex;
@@ -1960,13 +1975,19 @@ width: 100%;
    padding-top: 200px;
   padding-bottom: 200px;
 
-  background-image:
-    linear-gradient(
-      rgba(47, 48, 58, 0.40),
-      rgba(47, 48, 58, 0.40)
-    ),
-    url("../pages/image/webpbcg.webp");
-
+ @media (min-width: 1200px) {
+  .hero-section {
+    background-image:
+      linear-gradient(
+        rgba(47, 48, 58, 0.40),
+        rgba(47, 48, 58, 0.40)
+      ),
+      image-set(
+        url("../desktop-img/heroimg-destop@1x.webp") 1x,
+        url("../desktop-img/heroimg-destop@2x.webp") 2x
+      );
+  }
+}
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
