@@ -1,19 +1,5 @@
-:root {
-  --header-color: #2196f3;
-  --mainul-color: #212121;
-  --mainulfon-color: #f5f4fa;
-  --mainli-color: #757575;
-  --footer-color: #ffffff;
-  --logo-color: #000;
-  --footer-text-color: rgba(255, 255, 255, 0.6);
-  --background-footer-color: #2f303a;
-  --line-color: #eeeeee;
-}
 
-body {
-  font-family: "Roboto", sans-serif;
-  margin: 0;
-}
+
 
 .logotype {
   color: var(--header-color);
@@ -632,15 +618,7 @@ footer {
   letter-spacing: 0.42px;
 }
 
-.container {
-  width: 100%;
-  max-width: 100%;
-  padding: 0 15px;
-  margin: 0 auto;
-  box-sizing: border-box;
-  outline: 1px solid red
-  ;
-}
+
 
 .header {
   padding-top: 24px;

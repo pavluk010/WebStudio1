@@ -1,0 +1,35 @@
+.clients-title {
+  color: #212121;
+  text-align: center;
+  font-family: Roboto;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 1.08px;
+}
+
+.client-img {
+  width: 100%;
+  max-width: 170px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+.clients-list {
+  margin-top: 50px;
+
+  margin-bottom: 50px;
+  justify-content: center;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 30px;
+}
+
+.clients{
+  padding-top: 94px;
+  padding-bottom: 94px;
+  display: grid;
+  
+}
