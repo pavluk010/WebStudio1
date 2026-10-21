@@ -1,4 +1,13 @@
-.adventages-list {
+
+
+
+.adventages{
+  padding: 60px 0;
+
+
+
+
+&__list {
   color: var(--mainli-color);
   font-family: Roboto;
   font-size: 14px;
@@ -11,63 +20,58 @@ align-items: center;
 gap: 10px;
 }
 
-.adventages-listes {
+&__listes {
   gap: 30px;
   display: grid;
   grid-template-columns: 1fr;
 }
 
 
-.adventages-list {
-  content: "";
+
+
+
+&__list {
   position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -28px;
+
+    width: 0;
+    height: 4px;
+    border-radius: 2px;
+    background-color: var(--header-color);
+
+    transition: width 250ms ease;
+  }
+
+  &:hover::after {
+    width: 100%;
+  }
 }
 
 
-.adventages-list::after {
-  content: "";
-  position: absolute;
-  left: 0;
-
-  width: 0;
-  height: 4px;
-  border-radius: 2px;
-  background-color: var(--header-color);
-}
-
-
-.adventages-list:hover::after {
-  color: var(--header-color);
-  width: 100%;
-  transition: width 250ms ease;
-  bottom: -28px;
-}
-
-
-
-.adventages-titles {
+&__titles {
   color: var(--mainli-color);
   font-size: 14px;
   font-weight: 500;
   line-height: normal;
   letter-spacing: 0.28px;
-}
 
 
-
-.adventages {
-  padding: 60px 0;
-}
-
-
-.adventages-list:hover {
+&:hover {
   color: var(--header-color);
 }
+}
 
-.header-contacts .adventages-list {
+.header__contacts .adventages__list {
   color: #757575;
 }
 
-.header-contacts .adventages-list:hover {
+.header__contacts .adventages__list:hover {
   color: #2196F3;
+}
+
 }

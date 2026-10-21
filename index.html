@@ -23,12 +23,11 @@
   <body>
     <header class="header">
       <div class="container header__wrap">
-        <a href="./index.html" class="logotype"></a>
-        <a href="#"
+        <a class="header__logo" href="#"
           ><img src="./pages/image/webstudio.png" class="logo" alt="logo"
         /></a>
 
-        <button class="open" type="button">
+        <!-- <button class="open" type="button">
      <svg class="img-menu-button">
       <use href="./pages/image/symbol-defs.svg#menu"></use>
      </svg>
@@ -85,7 +84,7 @@
               </ul>
             </div>
           </div>
-        </div>
+        </div> -->
 
         <nav class="header__navigation">
           <ul class="header__list">
@@ -94,7 +93,7 @@
             </li>
 
             <li class="header__items">
-              <a href="./pages/about.html" class="header-detales">
+              <a href="./pages/about.html" class="header__detales">
                 Портфоліо
               </a>
             </li>
@@ -128,9 +127,9 @@
     </header>
 
     <main class="main">
-      <section class="hero__section">
+      <section class="main__section">
         <div class="container">
-          <h1 class="hero__title">Ефективні рішення для вашого бізнесу</h1>
+          <h1 class="main__title">Ефективні рішення для <br> вашого бізнесу</h1>
           <button type="button" class="main__button">Замовити послугу</button>
         </div>
       </section>
@@ -242,7 +241,7 @@
                   />
                 </picture>
                 <div class="team__div">
-                  <h3 class="main__person">Ігор Дем'яненко</h3>
+                  <h3 class="team__person">Ігор Дем'яненко</h3>
                   <p class="team__caption">Product Designer</p>
                   <ul class="team__items">
                     <li class="team__elem">
@@ -317,7 +316,7 @@
                   />
                 </picture>
                 <div class="team__div">
-                  <h3 class="main__person">Ольга Рєпіна</h3>
+                  <h3 class="team__person">Ольга Рєпіна</h3>
                   <p class="team__caption">Frontend Developer</p>
                   <ul class="team__items">
                     <li class="team__elem">
@@ -392,7 +391,7 @@
                   />
                 </picture>
                 <div class="team__div">
-                  <h3 class="main__person">Микола Тарасов</h3>
+                  <h3 class="team__person">Микола Тарасов</h3>
                   <p class="team__caption">Marketing</p>
                   <ul class="team__items">
                     <li class="team__elem">
@@ -449,7 +448,7 @@
                 />
                 </picture>
                 <div class="team__div">
-                  <h3 class="main__person">Михайло Єрмаков</h3>
+                  <h3 class="team__person">Михайло Єрмаков</h3>
                   <p class="team__caption">UI Designer</p>
                   <ul class="team__items">
                     <li class="team__elem">
@@ -501,7 +500,7 @@
           <h3 class="clients__title">Постійні клієнти</h3>
           <ul class="client__list">
             <li class="client__item">
-              <a href="" class="client__link">
+              <a href="#" class="client__link">
                 <svg class="client__icon">
                   <use href="./pages/image/symbol-defs.svg#logoone"></use>
                 </svg>
@@ -551,7 +550,7 @@
         <div class="column">
           <a href="#"
             ><img
-              class="webfooter"
+              class="footer__webfooter"
               src="./pages/image/webfooter.png"
               alt="webfooter"
           /></a>
@@ -613,10 +612,10 @@
             </li>
           </ul>
         </div>
-        <div class="subscribe">
+        <div class="footer__subscribe">
           <p class="footer__subs">Підпишіться на розсилку</p>
 
-          <div class="foot-btn">
+          <div class="foot__btn">
             <input class="footer__inp" type="text" placeholder="E-mail" />
 
             <button class="footer__button" type="button">

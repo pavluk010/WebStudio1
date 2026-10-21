@@ -4,6 +4,44 @@
   padding-bottom: 25px;
   display: flex;
 
+
+
+
+.logo {
+  width: 135px;
+  height: 19px;
+  margin-right: 93px;
+  color: var(--logo-color);
+  font-family: Raleway;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.78px;
+
+
+
+
+
+}
+
+&__navigation{
+   margin-right: auto;
+    display: none;
+    
+  }
+
+
+
+&__contacts {
+
+  margin-left: auto;
+  list-style: none;
+  padding: 0;
+}
+
+
+
   &__item {
     color: var(--logo-color);
     font-size: 14px;
@@ -13,6 +51,7 @@
     letter-spacing: 0.28px;
     text-decoration: none;
   }
+
 
   &__detales {
     position: relative;
@@ -182,9 +221,14 @@
   }
 
   &__contacts {
-    display: none;
-    margin-left: auto;
-
+     display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 30px;
+  margin-left: auto;
+  list-style: none;
+  padding: 0;
+    
     .adventages-list {
       color: #757575;
 
@@ -222,7 +266,6 @@
     margin-right: auto;
   }
   &__contacts {
-    flex-direction: row;
     gap: 30px;
   }
 
@@ -273,4 +316,51 @@
   line-height: 1.19;
   letter-spacing: 0.78px;
   text-decoration: none;
+
+
+
+
+
+
+
+
+
+  
+
+  @media (min-width: 1200px) {
+  &__contacts {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    align-items: center;
+  }
 }
+
+
+
+
+@media (min-width:480px){
+
+
+  .container {
+    max-width: 480px;
+  }
+
+
+   .header-navigation {
+    display: none;
+  }
+}
+
+
+}
+
+
+
+
+
+
+
+
+
+
