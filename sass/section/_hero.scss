@@ -72,7 +72,7 @@ height: 600.0px;
 
 
 
-.hero__text {
+&__text {
   color: var(--mainli-color);
   margin-top: 10px;
   font-size: 14px;
@@ -91,12 +91,12 @@ height: 600.0px;
 
 
 
-.hero__title {
+&__title {
   animation-name: title;
   animation-duration: 2000ms;
 }
 
-.work__title {
+&__title {
   color: var(--mainul-color);
   font-size: 28px;
   font-style: normal;
@@ -107,23 +107,83 @@ height: 600.0px;
   margin-bottom: 50px;
 }
 
-.work__image {
+&__image {
   display: block;
   width: 100%;
   height: auto;
 }
 
-.work__list {
+&__list {
   flex-direction: column;
   display: flex;
   gap: 30px;
 }
 
-.work__item {
+&__item {
   margin-left: 0;
   flex: 1;
   height: auto;
 }
+
+
+
+
+
+
+@media (min-width:768px){
+
+  .container{
+width: 768px;
+
+}
+
+&__button {
+    width: 216px;
+
+    padding: 10px 10px;
+  }
+
+ &__section {
+     text-align: center;
+
+  background-image: 
+  linear-gradient(
+    rgba(47, 48, 58, 0.40),
+    rgba(47, 48, 58, 0.40)
+  ),
+  image-set(
+    url("../tablet-img/heroimg-tablet@1x.webp") 1x,
+    url("../tablet-img/heroimg-tablet@2x.webp") 2x
+  );
+
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  padding: 200px 0;
+
+  
+  }
+  .work-list {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+  }
+
+  .work-item {
+    flex: 1;
+  }
+
+
+
+
+}
+
+
+
+
+
+
 
 
 
@@ -133,6 +193,19 @@ height: 600.0px;
 width: 1200px;
 
 }
+
+
+&__title{
+   color: var(--mainul-color);
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 1.08px;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
 
 
 

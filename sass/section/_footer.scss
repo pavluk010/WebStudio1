@@ -140,12 +140,13 @@
   }
 }
 
-@media screen and (max-width: 767px) {
+@media  (min-width: 768px) {
   .footer {
-    > .container {
+     .container {
       flex-direction: column;
       align-items: center;
       gap: 30px;
+      width: 768px;
     }
 
     .column,
@@ -156,7 +157,7 @@
       text-align: center;
     }
 
-    .foot-btn {
+    &__btn {
       flex-direction: column;
       align-items: center;
     }
@@ -170,5 +171,29 @@
       flex: 0 0 40px;
       width: 170px;
     }
+
+
+
+
+
+
+
   }
+
+  @media  (min-width: 1200px){
+.container{
+  width: 1200px;
+}
+
+.column{
+display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+
+
+
+}
 }

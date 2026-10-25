@@ -1,3 +1,57 @@
 .work {
-  display: none;
+  display: block ;
+
+  &__title {
+    color: var(--mainul-color);
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 1.08px;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+
+  &__list {
+    flex-direction: column;
+    display: flex;
+    gap: 30px;
+  }
+
+  &__item {
+    margin-left: 0;
+    flex: 1;
+    height: auto;
+  }
+
+  &__image {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media (min-width: 1200px) {
+  .work {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+
+  .container {
+    width: 1200px;
+  }
+
+  .work__list {
+    flex-direction: row;
+    gap: 30px;
+  }
+
+  .work__item {
+    flex: 1;
+  }
+
+  .work__image {
+    width: 100%;
+    height: auto;
+  }
 }

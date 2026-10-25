@@ -74,4 +74,62 @@ gap: 10px;
   color: #2196F3;
 }
 
+
+
+
+@media (min-width:768px){
+ .container{
+width: 768px;
+
+}
+&__listes {
+    gap: 30px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+
+.title {
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
+
+&__text {
+    color: var(--mainli-color);
+    margin-top: 10px;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+
+    letter-spacing: 0.42px;
+  }
+}
+
+
+
+
+
+@media (min-width:1200px){
+  .container{
+    width: 1200px;
+  }
+
+
+&__listes {
+    gap: 30px;
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .title {
+    display: block;
+    width: 100%;
+  }
+
+}
+
+
+
+
 }
