@@ -7,18 +7,36 @@
 
 .main{
 
+&__section {
+  text-align: center;
 
+  background-image:
+    linear-gradient(
+      rgba(47, 48, 58, 0.40),
+      rgba(47, 48, 58, 0.40)
+    ),
+    image-set(
+      url("../mobile-img/heroimg-mobile@1x.webp") 1x,
+      url("../mobile-img/heroimg-mobile@2x.webp") 2x
+    );
+
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  padding: 60px 0;
+}
   
 
 &__title {
 color: #FFF;
 text-align: center;
 font-family: Roboto;
-font-size: 44px;
+font-size: 26px;
 font-style: normal;
 font-weight: 900;
-line-height: 60px;
-letter-spacing: 2.64px;
+line-height: 42px;
+letter-spacing: 1.56px;
 text-transform: uppercase;
 
   margin-bottom: 30px;
@@ -26,25 +44,6 @@ text-transform: uppercase;
 }
 
 
-&__section {
-  background-color: #2f303a;
-
-  background-image:
-    linear-gradient(
-      rgba(47, 48, 58, 0.4),
-      rgba(47, 48, 58, 0.4)
-    ),
-    image-set(
-      url("/desktop-img/heroimg-destop@1x.webp") 1x,
-      url("/desktop-img/heroimg-destop@2x.webp") 2x
-    );
-width: 1600.0px;
-height: 600.0px;
-
-  padding-top: 200px;
-  box-sizing: border-box;
-
-}
 
 
 
@@ -96,16 +95,7 @@ height: 600.0px;
   animation-duration: 2000ms;
 }
 
-&__title {
-  color: var(--mainul-color);
-  font-size: 28px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
-  letter-spacing: 1.08px;
-  text-align: center;
-  margin-bottom: 50px;
-}
+
 
 &__image {
   display: block;
@@ -136,6 +126,11 @@ height: 600.0px;
 width: 768px;
 
 }
+
+&__title{
+  font-size: 26px;
+}
+
 
 &__button {
     width: 216px;
@@ -194,17 +189,41 @@ width: 1200px;
 
 }
 
+&__section {
+  background-color: #2f303a;
+
+  background-image:
+    linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    image-set(
+      url("/desktop-img/heroimg-destop@1x.webp") 1x,
+      url("/desktop-img/heroimg-destop@2x.webp") 2x
+    );
+width: 1600.0px;
+height: 600.0px;
+
+  padding-top: 200px;
+  box-sizing: border-box;
+
+}
+
 
 &__title{
-   color: var(--mainul-color);
-  font-size: 28px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
-  letter-spacing: 1.08px;
-  text-align: center;
-  margin-bottom: 50px;
+  color: #FFF;
+text-align: center;
+font-family: Roboto;
+font-size: 44px;
+font-style: normal;
+font-weight: 900;
+line-height: 60px;
+letter-spacing: 2.64px;
+text-transform: uppercase;
+
 }
+
+
 
 
 
