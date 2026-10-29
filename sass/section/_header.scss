@@ -1,5 +1,5 @@
 .header {
-  display: none;
+  display: block;
   padding-top: 25px;
   padding-bottom: 25px;
 
@@ -9,6 +9,25 @@
     gap: 30px;
   }
 
+&__logo {
+  display: block;
+  width: 134px;
+  height: 28px;
+  flex-shrink: 0;
+}
+
+
+
+
+&__navigation {
+  display: none;
+}
+
+&__icons{
+  width: 10.0px;
+height: 16.0px;
+
+}
 
 
 
@@ -16,11 +35,6 @@
 
 
 
-  &__navigation {
-    display: none;
-    padding-top: 21px;
-    padding-bottom: 21px;
-  }
 
   @media (min-width: 480px) {
     padding-top: 16px;
@@ -30,9 +44,13 @@
       width: 480px;
     }
 
+
+
+
     .logo {
       width: 134px;
       height: 28px;
+      
     }
   }
 
@@ -94,6 +112,7 @@
       display: flex;
       flex-wrap: wrap;
       gap: 10px;
+      
     }
 
     &__detales {
@@ -113,6 +132,7 @@
       font-weight: 500;
       line-height: normal;
       letter-spacing: 0.28px;
+     
     }
   }
 
@@ -129,10 +149,17 @@
       gap: 30px;
     }
 
+    
+
     &__navigation {
       display: flex;
       align-items: center;
       margin-left: 92px;
     }
+
+&__icons{
+width: 20px;
+}
+
   }
 }
