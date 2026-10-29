@@ -54,6 +54,9 @@
       margin-right: 87px;
     }
 
+
+
+    
     &__navigation {
       display: block;
       margin-left: 92px;
@@ -162,6 +165,36 @@
 
 
 
+
+&__info{
+display: grid;
+grid-template-columns: 100% ;
+gap: 30px;
+justify-content: center;
+
+@media (min-width:480px){
+grid-template-columns: 450px;
+
+}
+
+@media (min-width:768px){
+grid-template-columns: repeat( 2, 1fr);
+
+}
+
+@media (min-width:1200px){
+grid-template-columns: repeat( 3, 1fr);
+}
+
+
+}
+
+
+
+.peshka{
+display: none;
+}
+
 &__navigation {
   display: flex;
   justify-content: center;
@@ -215,6 +248,7 @@ color: #000;
     transition: 0.3s;
   }
 }
+
 
 
 
