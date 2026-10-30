@@ -15,15 +15,34 @@
   }
 }
 
+
+
+
+
+
+
+
 .client {
   &__list {
-    display: flex;
+
+display: grid;
+grid-template-columns: repeat(2fr, 3);
+
+@media (min-width:768px){
+  display: grid;
+grid-template-columns: repeat(2fr, 3);
+}
+
+
+    @media (min-width:1200px){
+          display: flex;
     flex-direction: row;
     justify-content: space-between;
     gap: 30px;
     margin: 0;
     padding: 0;
     list-style: none;
+    }
   }
 
   &__item {

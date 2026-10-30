@@ -1,35 +1,8 @@
 .work {
-  display: none;
   padding-top: 60px;
   padding-bottom: 60px;
 
-    &__title{
-      display: none;
-    }
-
- 
-
-  &__title {
-    color: var(--mainul-color);
-    font-size: 28px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    letter-spacing: 1.08px;
-    text-align: center;
-    margin-bottom: 50px;
-  }
-
-  &__list {
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-    margin: 0;
-    padding: 0;
-    list-style: none;
-  }
-
-  &__item {
+    &__item {
     flex: 1;
     min-width: 0;
     margin-left: 0;
@@ -41,19 +14,42 @@
     height: auto;
   }
 
+  &__title {
+    display: none;
+    color: var(--mainul-color);
+    font-size: 28px;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 1.08px;
+    text-align: center;
+    margin-bottom: 50px;
+
+    @media (min-width:1200px){
+      display: block;
+    }
+  }
+
+  &__list {
+    display: none;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+    @media (min-width:1200px){
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      gap: 30px;
+    }
+  }
+
+
+
   @media (min-width: 480px) {
     .container {
       width: 100%;
       max-width: 480px;
     }
-
- 
-
-&__list{
-  display: none;
-}
-    
-
   }
 
   @media (min-width: 768px) {
@@ -61,21 +57,10 @@
       width: 100%;
       max-width: 768px;
     }
-
-    &__list {
-      flex-direction: row;
-      flex-wrap: wrap;
-    }
-
-    &__item {
-      flex: 1 1 calc(50% - 15px);
-    }
-
-
   }
 
   @media (min-width: 1200px) {
-      display: block;
+    display: block;
     padding-top: 94px;
     padding-bottom: 94px;
 
@@ -84,30 +69,6 @@
       max-width: 1200px;
     }
 
-    &__list {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    gap: 30px;
-    }
-
-    &__item {
-      flex: 1 1 0;
-      min-width: 0;
-    }
-
-        &__title{
-      display: block;
-    }
-
-    &__image {
-      width: 100%;
-      height: auto;
-    }
-
-.work{
-  display: block;
-}
 
  
   }
