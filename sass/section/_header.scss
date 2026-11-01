@@ -7,38 +7,31 @@
     color: #000;
   }
 
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
 
-
-    &__list {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 10px;
-    }
-
-    
-
-    &__items {
-      color: var(--logo-color);
-      font-size: 14px;
-      font-weight: 500;
-      line-height: normal;
-      letter-spacing: 0.28px;
-     
-    }
-
-  
+  &__items {
+    color: var(--logo-color);
+    font-size: 14px;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.28px;
+  }
 
   &__detales {
-      color: var(--mainul-color);
-      font-size: 14px;
-      font-style: normal;
-      font-weight: 500;
-      line-height: 1.14;
-      letter-spacing: 0.28px;
-      position: relative;
-      padding-bottom: 11px;
-       gap: 20px;
-    }
+    color: var(--mainul-color);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.28px;
+    position: relative;
+    padding-bottom: 11px;
+    gap: 20px;
+  }
 
   &__contacts {
     display: flex;
@@ -64,7 +57,6 @@
     font-weight: 700;
     line-height: normal;
     letter-spacing: 0.78px;
-    
 
     @media (min-width: 480px) {
       width: 134px;
@@ -73,7 +65,7 @@
     @media (min-width: 768px) {
       width: 135px;
       height: 19px;
-     
+
       color: var(--header-color);
       font-family: Raleway;
       font-size: 24px;
@@ -82,30 +74,28 @@
       line-height: normal;
       letter-spacing: 0.78px;
     }
-    
-}
+  }
 
+  &__navigation {
+    display: none;
 
-    &__navigation {
-      display: none;
-
-      @media (min-width: 768px) {
-        display: block;
-        margin-left: 92px;
-      }
-      @media (min-width: 1200px) {
-        display: flex;
-        align-items: center;
-        margin-left: 92px;
-      }
+    @media (min-width: 768px) {
+      display: block;
+      margin-left: 92px;
     }
-
-    &__icons {
-      width: 10px;
-      height: 16px;
-
-      @media (min-width: 1200px) {
-        width: 20px;
-      }
+    @media (min-width: 1200px) {
+      display: flex;
+      align-items: center;
+      margin-left: 92px;
     }
+  }
+
+  &__icons {
+    width: 10px;
+    height: 16px;
+
+    @media (min-width: 1200px) {
+      width: 20px;
+    }
+  }
 }

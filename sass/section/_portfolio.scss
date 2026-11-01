@@ -3,24 +3,53 @@
   padding-top: 25px;
   padding-bottom: 25px;
 
+  &__detale {
+    color: black;
+  }
+
   &__contacts {
     display: flex;
     flex-direction: row;
     gap: 30px;
+
+    @media (min-width: 768px) {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      margin-left: auto;
+    }
+
+    @media (min-width: 1200px) {
+      flex-direction: row;
+      gap: 30px;
+    }
   }
 
   &__navigation {
     display: none;
     padding-top: 21px;
     padding-bottom: 21px;
+
+    @media (min-width: 768px) {
+      display: block;
+      margin-left: 92px;
+    }
+
+    @media (min-width: 1200px) {
+      display: flex;
+      align-items: center;
+      margin-left: 92px;
+    }
   }
 
+  .logo {
+    width: 134px;
+    height: 28px;
 
-
-
-
-
-
+    @media (min-width: 768px) {
+      margin-right: 87px;
+    }
+  }
 
   @media (min-width: 480px) {
     padding-top: 16px;
@@ -28,11 +57,6 @@
 
     .container {
       width: 480px;
-    }
-
-    .logo {
-      width: 134px;
-      height: 28px;
     }
   }
 
@@ -50,47 +74,15 @@
       justify-content: space-between;
     }
 
-    .logo {
-      margin-right: 87px;
-    }
-
-
-
-    
-    &__navigation {
-      display: block;
-      margin-left: 92px;
-    }
-
     &__list {
       flex-wrap: nowrap;
       gap: 50px;
-    }
-
-    &__contacts {
-      display: flex;
-      flex-direction: column;
-      gap: 10px;
-      margin-left: auto;
     }
 
     &__wrap {
       display: flex;
       align-items: center;
       justify-content: center;
-    }
-
-    .logo {
-      width: 135px;
-      height: 19px;
-      margin-right: auto;
-      color: var(--logo-color);
-      font-family: Raleway;
-      font-size: 24px;
-      font-style: normal;
-      font-weight: 700;
-      line-height: normal;
-      letter-spacing: 0.78px;
     }
 
     &__list {
@@ -123,17 +115,6 @@
     .container {
       width: 1200px;
     }
-
-    &__contacts {
-      flex-direction: row;
-      gap: 30px;
-    }
-
-    &__navigation {
-      display: flex;
-      align-items: center;
-      margin-left: 92px;
-    }
   }
 }
 
@@ -161,97 +142,79 @@
   }
 }
 
-.main{
+.main {
+  &__info {
+    display: grid;
+    grid-template-columns: 100%;
+    gap: 30px;
+    justify-content: center;
 
+    @media (min-width: 480px) {
+      grid-template-columns: 450px;
+    }
 
+    @media (min-width: 768px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
 
-
-&__info{
-display: grid;
-grid-template-columns: 100% ;
-gap: 30px;
-justify-content: center;
-
-@media (min-width:480px){
-grid-template-columns: 450px;
-
-}
-
-@media (min-width:768px){
-grid-template-columns: repeat( 2, 1fr);
-
-}
-
-@media (min-width:1200px){
-grid-template-columns: repeat( 3, 1fr);
-}
-
-
-}
-
-
-
-.peshka{
-display: none;
-}
-
-&__navigation {
-  display: flex;
-  justify-content: center;
-}
-
-&__list {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  flex-wrap: nowrap;
-  gap: 8px;
-  padding: 0;
-  margin: 0;
-  list-style: none;
-
-  margin-bottom: 34px;
-  margin-top: 94px;
-}
-
-&__part{
- background-color: var(--header-color);
-  color: black;
-  box-shadow: 0px 4px 0px 0px #afb1b862;
- padding-top: 6px;
- padding-bottom: 6px;
- padding-left: 26px;
- padding-right: 26px;
- border-radius: 4px;
- font-size: 16px;
-font-style: normal;
-font-weight: 500;
-line-height: 26px;
-letter-spacing: 0.48px;
-text-decoration: none;
-width: 125.0px;
-height: 38.0px;
-
-}
-
-
-&__itemss{
-color: #000;
-
-}
-
-&__part {
-  color: black;
-
-  &:hover {
-    color: var(--footer-color);
-    transition: 0.3s;
+    @media (min-width: 1200px) {
+      grid-template-columns: repeat(3, 1fr);
+    }
   }
-}
 
+  .peshka {
+    display: none;
+  }
 
+  &__navigation {
+    display: flex;
+    justify-content: center;
+  }
 
+  &__list {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: nowrap;
+    gap: 8px;
+    padding: 0;
+    margin: 0;
+    list-style: none;
 
+    margin-bottom: 34px;
+    margin-top: 94px;
+  }
 
+  &__part {
+    background-color: var(--header-color);
+    color: black;
+    box-shadow: 0px 4px 0px 0px #afb1b862;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-left: 26px;
+    padding-right: 26px;
+    border-radius: 4px;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 26px;
+    letter-spacing: 0.48px;
+    text-decoration: none;
+    width: 125px;
+    height: 38px;
+  }
 
+  &__itemss {
+    color: #000;
+  }
+
+  &__part {
+    color: black;
+
+    &:hover {
+      color: var(--footer-color);
+      transition: 0.3s;
+    }
+  }
+  
 }

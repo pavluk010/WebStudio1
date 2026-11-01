@@ -233,6 +233,7 @@ margin-bottom: 20px;
 
     @media (min-width:768px){
       width: 100%;
+      margin-bottom: 20px;
     }
   }
 
@@ -260,6 +261,7 @@ margin-bottom: 20px;
     @media (min-width:1200px){
   flex: 0 0 150px;
   width: 150px;
+ margin-bottom: 20px;
     }
 
   }
@@ -350,16 +352,26 @@ margin-bottom: 20px;
 
 
 
-&__inp {
-  flex: 0 0 358px;
-  width: 358px;
-  height: 50px;
-  box-sizing: border-box;
-}
+
 
 
 
 
 
   }
+
+  .foot__btn {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+
+
+.footer__button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  white-space: nowrap;
+}
 }
