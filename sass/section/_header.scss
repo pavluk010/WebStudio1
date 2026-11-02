@@ -1,11 +1,19 @@
 .header {
-  display: block;
+  display: flex;
   padding-top: 25px;
   padding-bottom: 25px;
 
   &__span {
     color: #000;
+  
   }
+
+
+
+
+
+
+
 
   &__list {
     display: flex;

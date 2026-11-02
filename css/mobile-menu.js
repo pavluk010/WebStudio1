@@ -1,18 +1,11 @@
 const openButton = document.querySelector(".open");
-const closeButton = document.querySelector(".close-menu");
+const closeButton = document.querySelector(".close__menu");
 const backdrop = document.querySelector(".backdrop");
-const overlay = document.querySelector(".overlay");
 
-function openMenu() {
-    backdrop.classList.remove("is-hidden");
-    overlay.classList.add("is-open");
-}
+openButton.addEventListener("click", function () {
+  backdrop.classList.remove("is__hidden");
+});
 
-function closeMenu() {
-    backdrop.classList.add("is-hidden");
-    overlay.classList.remove("is-open");
-}
-
-openButton.addEventListener("click", openMenu);
-closeButton.addEventListener("click", closeMenu);
-overlay.addEventListener("click", closeMenu);
+closeButton.addEventListener("click", function () {
+  backdrop.classList.add("is__hidden");
+});
