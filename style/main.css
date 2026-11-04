@@ -87,6 +87,37 @@ body {
 .header__span {
   color: #000;
 }
+.header__detales {
+  position: relative;
+  text-decoration: none;
+}
+.header__detales::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -17px;
+  width: 100%;
+  height: 3px;
+  background-color: var(--header-color);
+  transform: scaleX(0);
+  transition: transform 250ms ease;
+}
+.header__detales:hover::after {
+  transform: scaleX(1);
+}
+.header__detales {
+  color: var(--header-color);
+  transition: 0.2s;
+}
+.header__detales:hover {
+  color: var(--header-color);
+}
+.header .adventages__list {
+  transition: 0.2s;
+}
+.header .adventages__list:hover {
+  color: var(--header-color);
+}
 .header__list {
   display: flex;
   flex-wrap: wrap;
@@ -506,6 +537,7 @@ body {
   line-height: normal;
   letter-spacing: 0.48px;
   margin-top: 10px;
+  margin-bottom: 16px;
 }
 .team__items {
   display: flex;
